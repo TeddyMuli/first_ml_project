@@ -25,4 +25,8 @@ lr = LinearRegression()
 lr.fit(x_train, y_train)
 
 # Applying the model to make predictions
+y_lr_train_prediction = lr.predict(x_train)
+y_lr_test_prediction = lr.predict(x_test)
+print(y_lr_train_prediction, y_lr_test_prediction)
 
+# Evaluate model perfomance
