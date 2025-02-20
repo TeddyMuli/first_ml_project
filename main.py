@@ -2,6 +2,7 @@
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
 
 '''Data Preparation'''
 # Load Data
@@ -17,3 +18,11 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_
 
 print(f'X Train: \n{x_train}')
 print(f'X Test: \n{x_test}')
+
+'''Model building'''
+# Training the model
+lr = LinearRegression()
+lr.fit(x_train, y_train)
+
+# Applying the model to make predictions
+
