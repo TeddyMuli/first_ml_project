@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 import pandas as pd
+from sklearn.model_selection import train_test_split
+
 '''Data Preparation'''
 # Load Data
 df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/delaney_solubility_with_descriptors.csv')
