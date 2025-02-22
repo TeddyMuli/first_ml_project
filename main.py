@@ -73,4 +73,5 @@ print(df_models.reset_index(drop=True))
 
 '''Data Visualization'''
 plt.scatter(x=y_train, y=y_lr_train_prediction)
-print(plt.plot())
+#print(plt.plot())
+plt.show()
